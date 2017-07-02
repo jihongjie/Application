@@ -3,6 +3,7 @@ package xiaoan.com.application;
 import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.widget.Toast;
 
 import xiaoan.com.application.Activity.VideoLoginActivity;
@@ -16,6 +17,9 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         //startActivity(new Intent(MainActivity.this,showProcessActivity.class));
         startActivity(new Intent(MainActivity.this,VideoLoginActivity.class));
+        Log.e("a","a");
+//prkbkwrbnmjrbmwk1251525
+
 
     }
 }
