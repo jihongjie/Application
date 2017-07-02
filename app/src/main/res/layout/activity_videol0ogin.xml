@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_centerInParent="true"
+    android:layout_height="match_parent">
+    <xiaoan.com.application.View.VideoLoginView
+        android:id="@+id/video_login"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+
+   <android.support.design.widget.TextInputLayout
+       android:id="@+id/video_login_inptulayout1"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content"
+      android:layout_marginTop="150dp"
+       android:layout_marginLeft="30dp"
+       android:layout_marginRight="30dp"
+       >
+
+       <android.support.v7.widget.AppCompatEditText
+           android:id="@+id/video_login_email"
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:hint="Email"/>
+
+
+   </android.support.design.widget.TextInputLayout>
+
+    <android.support.design.widget.TextInputLayout
+        android:id="@+id/video_login_inptulayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="210dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp">
+        <android.support.v7.widget.AppCompatEditText
+            android:id="@+id/video_login_password"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Password"/>
+    </android.support.design.widget.TextInputLayout>
+
+    <TextView
+        android:id="@+id/video_login_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="28sp"
+        android:text="Video Login"
+        android:textColor="#d1e63ce3"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="100dp"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="15sp"
+        android:text="No account yet? Create one"
+        android:textColor="#fc52d5f5"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="300dp"
+        />
+
+
+    <Button
+        android:id="@+id/video_login_sign"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="600dp"
+        android:layout_marginRight="50dp"
+        android:layout_marginLeft="50dp"
+        android:background="#FF4081"
+        android:text="Sign Up"
+        android:textColor="#fafafa"
+        android:textSize="20sp"
+        />
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/qq"
+        android:layout_marginTop="30dp"
+        android:layout_centerHorizontal="true"
+
+        />
+
+</RelativeLayout>

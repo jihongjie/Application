@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Application</string>
+    <string name="jinchengguanli">进程管理</string>
+    <string name="processtitle">s</string>
+</resources>

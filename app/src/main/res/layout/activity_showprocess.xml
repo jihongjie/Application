@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+    
+    
+
+
+    <RelativeLayout
+        android:clipToPadding="false"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="进程总数:"
+            android:padding="5dp"
+            />
+        <TextView
+            android:id="@+id/showprocess_meminfo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="剩余/总数:"
+            android:layout_alignParentRight="true"
+            android:padding="5dp"/>
+
+    </RelativeLayout>
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/showprocess_refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:id="@+id/showprocess_linearlayout"
+                android:layout_gravity="center"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ProgressBar
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="请稍候..."
+                    android:textColor="#9c1fdf"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/showprocess_linearlayout_count"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                >
+                <TextView
+                    android:id="@+id/showprocess_count"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="初始化?"
+                    android:gravity="center"
+                    android:background="#b0a55ff1"
+                    />
+
+            </LinearLayout>
+
+
+            <ListView
+                android:fadeScrollbars="true"
+                android:id="@+id/showprocess_lv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </ListView>
+
+        </FrameLayout>
+
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+
+
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_height="wrap_content"-->
+        <!--android:orientation="horizontal">-->
+        <!--<Button-->
+            <!--android:id="@+id/showprocess_quanxuan"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_weight="1"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="全选"/>-->
+        <!--<Button-->
+            <!--android:id="@+id/showprocess_fanxuan"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_weight="1"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="反选"/>-->
+        <!--<Button-->
+            <!--android:id="@+id/showprocess_clear"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_weight="1"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="一键清理"/>-->
+        <!--<Button-->
+            <!--android:id="@+id/showprocess_setting"-->
+            <!--android:layout_width="0dp"-->
+            <!--android:layout_weight="1"-->
+
+            <!--android:layout_height="wrap_content"-->
+            <!--android:text="设置"/>-->
+
+    <!--</LinearLayout>-->
+</LinearLayout>
